@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from 'react';
+import React,{ useState } from 'react';
 import { Card, Input, Button } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
 import { v4 as uuidv4 } from 'uuid';

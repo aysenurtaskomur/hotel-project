@@ -90,7 +90,7 @@ const HotelList = () => {
                     <p>OTEL EKLE</p>
                 </div>
 
-                <Sorter setSortMode={setSortMode} />
+                <Sorter sortMode={sortMode} setSortMode={setSortMode} />
 
                 {
                     paginationProps.data.length > 0

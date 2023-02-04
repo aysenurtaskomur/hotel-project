@@ -1,11 +1,11 @@
-import React,{ useState } from 'react';
-import { Button, Dropdown, message, Space, Tooltip } from 'antd';
-import { DownOutlined, UserOutlined } from '@ant-design/icons';
+import React from 'react';
+import { Button, Dropdown, Space } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
 import SortIcon from '../assets/icons/sort.svg'
 import '../styles/sorter.scss'
 
 
-const Sorter = ({setSortMode}) => {
+const Sorter = ({sortMode,setSortMode}) => {
     
     const items = [
         {
@@ -26,19 +26,28 @@ const Sorter = ({setSortMode}) => {
         items,
         onClick: handleMenuClick,
     };
+
+    const dropdownText = () => {
+        if(sortMode){
+            return sortMode === 'asc' ? 'Artan' :'Azalan'
+        }else{
+            return 'Sıralama'
+        }
+    }
+
     return(
         <Dropdown 
         menu={menuProps}
         className="dropdown-content"
         trigger={['click']}
-        // onOpenChange={(e)=>console.log(e)}
         >
         <Button
+        aria-label="sorter-button"
         style={{border: 'none'}}>
             <div className="dropdown-btn">
-                <img src={SortIcon} style={{width:'15px',height:'15px'}}/>
+                <img data-testid="sort-icon" alt="sort-icon" src={SortIcon} style={{width:'15px',height:'15px'}}/>
                 <Space>
-                Sıralama
+                {dropdownText()}
                 <DownOutlined className="down-outlined" style={{width:'10px',height:'10px'}}/>
                 </Space>
             </div>
