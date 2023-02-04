@@ -23,6 +23,9 @@ npm install
 # Run test
 npm test
 
+#Run project
+npm start
+
 ```
 
 
