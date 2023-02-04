@@ -1,0 +1,47 @@
+.custom-modal {
+    //top: 35%;
+    padding: 0 14px;
+  
+    .ant-modal-content {
+      border-radius: 10px;
+  
+      .ant-modal-header {
+        height: 56px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 13px 0 20px 24px;
+  
+        .ant-modal-title {
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          font-size: 20px;
+          color: #000;
+        }
+      }
+  
+      .ant-modal-body {
+        padding: 27px 28px 42px 24px;
+
+        .modal-content{
+            font-size: 18px;
+            p{
+                display: inline;
+                font-weight: 600;
+            }
+        }
+      }
+
+      .ant-modal-footer{
+        display:'flex';
+        justify-content:'center';
+
+        button{
+            width:200px;
+            height:50px;
+        }
+      }
+    }
+  }

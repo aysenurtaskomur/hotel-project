@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    .add-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 30%;
+        box-shadow: 2px 7px 7px 0px #64646f33;
+        
+        .add-input{
+            width:200px;
+            height:70px;
+            margin: 20px;
+        }
+
+        .add-btn-container{
+            display: flex;
+            justify-content: flex-end;
+
+            .add-complete-btn{
+                width:120px;
+                font-weight: 500;
+                background-color: yellowgreen;
+                color: #fff;
+            }
+
+            .add-btn{
+                width:100px;
+                font-weight: 400;
+            }
+
+            .ant-btn:hover{
+                border: none !important;
+            }
+        }
+    }
+}
+
